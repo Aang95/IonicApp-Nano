@@ -1,0 +1,41 @@
+<ion-view view-title="Registration Form">
+  <ion-content>
+  <div class="list" ng-controller="registerCtrl">
+  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Username</span>
+    <input type="text" placeholder="Type your desired Username" ng-model="user.name">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="text" placeholder="Type your email id " ng-model="user.email">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Mobile Number</span>
+    <input type="text" placeholder="Type your mobile number" ng-model="user.mobile">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Password</span>
+    <input type="password" placeholder="Type your desired password" ng-model="user.pass">
+  </label> 
+  
+  <br>
+
+  <br>
+
+
+<button class="button button-medium button-calm" ng-click="update(user)"  value="Save" >
+  Submit your form 
+</button>
+<button class="button button-medium button-calm" ng-click="reset()"value="Reset">
+  Reset 
+</button>
+
+<a class="button button-calm icon icon-left ion-chevron-left" href="#/app/login">Back to login page</a>
+    
+ <pre>form = {{user | json }}</pre>
+  <pre>master = {{master |json }}</pre>
+
+</div>
+  </ion-content>
+</ion-view>

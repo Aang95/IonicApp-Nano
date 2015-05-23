@@ -1,0 +1,35 @@
+<ion-view view title="Login">
+  <ion-content>
+  <div class="login-body">
+  <div class="list list-inset">
+  <label class="item item-input">
+   <span class="input-label">email</span>
+    <input type="text" ng-model="email" placeholder="example@gmail.com">
+    
+  </label>
+  <label class="item item-input">
+  <span class="input-label">password</span>
+    <input type="text" ng-model="password" placeholder="password">
+
+  </label>
+  </div>
+  <div ng-controller="loginCtrl">
+  <button class="button button-block button-calm" ng-click="login(email,password)">
+  Login
+</button>
+</div>
+
+<h3>email : {{email}}</h3>
+<h3>pass : {{password}}</h3>
+<h4>{{jsonContents[0].guid}}</h4>
+
+
+<a class="button button-calm icon icon-right ion-chevron-right" href="#/register">Register Now :)</a>
+
+
+
+
+
+  </button>
+  </ion-content>
+</ion-view>
